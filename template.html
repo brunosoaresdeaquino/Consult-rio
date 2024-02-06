@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Médica</title>
+</head>
+<body>
+  <header>
+   <img src="assets/consultorio-medico.jpg" alt="consultorio">
+  </header>
+  <nav>
+    <a href="#principal">Página Principal</a>
+    <a href="#sobre">Sobre a Clínica</a>
+    <a href="#horario">Horário de Atendimento</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <main>
+    <section id="principal">
+      <div>
+        <h1>Página Principal</h1>
+        <p>Breve descrição sobre a clínica.</p>
+      </div>
+    </section>
+    <section id="sobre">
+      <div>
+        <h1>Sobre a Clínica</h1>
+        <p>Texto falando sobre a clínica.</p>
+      </div>
+    </section>
+    <section id="horario">
+      <div>
+        <h1>Horário de Atendimento</h1>
+        <p>Pequeno texto falando sobre os serviços:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Serviços</th>
+              <th>Segunda a Sexta</th>
+              <th>Sábados</th>
+              <th>Feriados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Clínica geral</td>
+              <td>08h - 19h</td>
+              <td>08h - 14h</td>
+              <td>08h - 14h</td>
+            </tr>
+            <tr>
+              <td>Psicologia</td>
+              <td>08h - 19h</td>
+              <td>08h - 14h</td>
+              <td>08h - 14h</td>
+            </tr>
+            <tr>
+              <td>Pediatria</td>
+              <td>08h - 19h</td>
+              <td>08h - 18h</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Oftalmologia</td>
+              <td>08h - 19h</td>
+              <td>08h - 18h</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="contato">
+      <div>
+        <h1>Contato</h1>
+        <p>Telefones de contato:</p>
+        <ul>
+          <li>Celular: (11) 98765-4321</li>
+          <li>WhatsApp: (11) 98765-4321</li>
+        </ul>
+        <p>Endereço:</p>
+        <p>Rua Exemplo, 123 - Bairro - Cidade/Estado</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-46.123456!3d-23.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sNome%20da%20Cl%C3%ADnica!5e0!3m2!1spt-BR!2sbr!4v1569300756211!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <form action="submit_form.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Telefone: (11) 1234-5678 | E-mail: contato@clinica.com</p>
+  </footer>
+</body>
+</html>
